@@ -183,6 +183,7 @@ For the third image,the model is relatively sure that this is a no passing sign 
 | .02936     				| No passing for vehicles over 3.5 metric tone										|
 | 0					| Vehicles over 3.5 metric tons prohibited										|
 | 0     			| No vehicles			 				|
+
 | 0		    | Priority road    |
 
 For the fourth image,the model is relatively sure that this is a priority road (probability of 1.0 ), and the image does contain a Priority road sign. The top five soft max probabilities were:
@@ -224,20 +225,20 @@ For the seventh image,the model is relatively sure that this is a yield sign (pr
 | Probability         	|     Prediction	        					| 
 |:---------------------:|:---------------------------------------------:| 
 | .96829       			| Yield sign									| 
-| .02381     				| Speed limit (60km/h))							|
+| .02381     				| Speed limit (60km/h)							|
 | .00227 				| No passing for vehicles over 3.5 metric tons								|
 | .00127     			| Turn right ahead	 				|
 | .00082		    | Speed limit (50km/h)  |
 
-
+For the eighth image,the model is relatively sure that this is a turn right ahead sign (probability of 0.98009), and the image does contain a turn right ahead sign. The top five soft max probabilities were:
 
 | Probability         	|     Prediction	        					| 
 |:---------------------:|:---------------------------------------------:| 
-| .96829       			| Yield sign									| 
-| .02381     				| Speed limit (60km/h))							|
-| .00227 				| No passing for vehicles over 3.5 metric tons								|
-| .00127     			| Turn right ahead	 				|
-| .00082		    | Speed limit (50km/h)  |
+| .96829       			| Turn right ahead									| 
+| .01103     				| Ahead only							|
+| .00437 				| No vehicles						|
+| .00118     			| Go straight or right				|
+| .00106	    | Traffic signals  |
 
 
 ### (Optional) Visualizing the Neural Network (See Step 4 of the Ipython notebook for more details)
