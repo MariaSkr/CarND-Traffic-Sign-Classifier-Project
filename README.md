@@ -131,6 +131,7 @@ The images might be difficult to classify because of noizy background.
 Here is example of a traffic sign after preprocessing:
 
 
+
 ![alt text](https://github.com/MariaSkr/CarND-Traffic-Sign-Classifier-Project/blob/master/04-web-dataset-preprocessing.png)
 
 
@@ -140,6 +141,7 @@ Here is example of a traffic sign after preprocessing:
 | No passing   			| No passing										|
 |Speed limit (20km/h)					| Speed limit (20km/h)										|
 | Stop     		|Stop				 				|
+
 | Priority road			| Priority road  							|
 | Yield		| Yield							|
 | Turn right ahead	|Turn right ahead				|
@@ -182,6 +184,17 @@ For the third image,the model is relatively sure that this is a no passing sign 
 | 0					| Vehicles over 3.5 metric tons prohibited										|
 | 0     			| No vehicles			 				|
 | 0		    | Priority road    |
+
+For the fourth image,the model is relatively sure that this is a priority road (probability of 1.0 ), and the image does contain a Priority road sign. The top five soft max probabilities were:
+
+
+| Probability         	|     Prediction	        					| 
+|:---------------------:|:---------------------------------------------:| 
+| 1.0        			| Priority road   									| 
+| 0     				| Road work								|
+| 0					| Yield										|
+| 0     			| No vehicles			 				|
+| 0		    | Speed limit (30km/h)    |
 
 For the fourth image,the model is relatively sure that this is a priority road (probability of 1.0 ), and the image does contain a Priority road sign. The top five soft max probabilities were:
 
