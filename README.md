@@ -196,16 +196,50 @@ For the fourth image,the model is relatively sure that this is a priority road (
 | 0     			| No vehicles			 				|
 | 0		    | Speed limit (30km/h)    |
 
-For the fourth image,the model is relatively sure that this is a priority road (probability of 1.0 ), and the image does contain a Priority road sign. The top five soft max probabilities were:
+For the fifth image,the model is relatively sure that this is a stop sign (probability of 1.0 ), and the image does contain a stop sign. The top five soft max probabilities were:
 
 
 | Probability         	|     Prediction	        					| 
 |:---------------------:|:---------------------------------------------:| 
-| 1.0        			| Priority road   									| 
-| 0     				| Road work								|
-| 0					| Yield										|
-| 0     			| No vehicles			 				|
-| 0		    | Speed limit (30km/h)    |
+| 1.0        			| Stop sign 									| 
+| 0     				| Priority road								|
+| 0					| Keep right									|
+| 0     			| Turn left ahead		 				|
+| 0		    | Yield    |
+
+For the sixth image,the model is relatively sure that this is a speed limit (20km/h) sign (probability of 0.93827), and the image does contain a Speed limit (20km/h). The top five soft max probabilities were:
+
+
+| Probability         	|     Prediction	        					| 
+|:---------------------:|:---------------------------------------------:| 
+| .93827       			| Speed limit (20km/h)									| 
+| .06171     				| Speed limit (30km/h)							|
+| .00002					| Speed limit (70km/h)									|
+| 0     			| Speed limit (120km/h)	 				|
+| 0		    | Speed limit (80km/h)   |
+
+For the seventh image,the model is relatively sure that this is a yield sign (probability of 0.96829), and the image does contain a yield sign. The top five soft max probabilities were:
+
+
+| Probability         	|     Prediction	        					| 
+|:---------------------:|:---------------------------------------------:| 
+| .96829       			| Yield sign									| 
+| .02381     				| Speed limit (60km/h))							|
+| .00227 				| No passing for vehicles over 3.5 metric tons								|
+| .00127     			| Turn right ahead	 				|
+| .00082		    | Speed limit (50km/h)  |
+
+
+
+| Probability         	|     Prediction	        					| 
+|:---------------------:|:---------------------------------------------:| 
+| .96829       			| Yield sign									| 
+| .02381     				| Speed limit (60km/h))							|
+| .00227 				| No passing for vehicles over 3.5 metric tons								|
+| .00127     			| Turn right ahead	 				|
+| .00082		    | Speed limit (50km/h)  |
+
+
 ### (Optional) Visualizing the Neural Network (See Step 4 of the Ipython notebook for more details)
 ####1. Discuss the visual output of your trained network's feature maps. What characteristics did the neural network use to make classifications?
 
