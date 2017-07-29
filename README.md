@@ -69,7 +69,6 @@ My final model consisted of the following layers:
 | Input         		| 32x32x1 RGB image   							| 
 | Convolution 5x5     	| 1x1 stride, 'VALID' padding, outputs 28x28x6	|
 | RELU					|												|
-
 | Max pooling	      	| 2x2 stride, outputs 14x14x6 				|
 | Flatten    | outputs 400    									|
 |Fully connected 		| outputs 120      									|
@@ -98,7 +97,7 @@ training set accuracy of 0.99303
 
 validation set accuracy of 0.94580
 
-test set accuracy of 0.92605
+test set accuracy of 0.929
 
 This solution based on modified LeNet-5 architecture. With the original LeNet-5 architecture, I've got a validation set accuracy of about 0.88.
 
@@ -116,42 +115,72 @@ Step 3: Important design choice - apply Dropout - a simple way to prevent neural
 
 Here are 8 German traffic signs that I found on the web:
 
-![alt text](https://github.com/MariaSkr/CarND-Traffic-Sign-Classifier-Project/blob/master/03-web-dataset.png)
+![alt text](https://github.com/MariaSkr/CarND-Traffic-Sign-Classifier-Project/blob/master/1.jpg)
+![alt text](https://github.com/MariaSkr/CarND-Traffic-Sign-Classifier-Project/blob/master/2.jpg)
+![alt text](https://github.com/MariaSkr/CarND-Traffic-Sign-Classifier-Project/blob/master/3.jpg)
+![alt text](https://github.com/MariaSkr/CarND-Traffic-Sign-Classifier-Project/blob/master/4.jpg)
+![alt text](https://github.com/MariaSkr/CarND-Traffic-Sign-Classifier-Project/blob/master/5.jpg)
+![alt text](https://github.com/MariaSkr/CarND-Traffic-Sign-Classifier-Project/blob/master/6.jpg)
+![alt text](https://github.com/MariaSkr/CarND-Traffic-Sign-Classifier-Project/blob/master/7.jpg)
+![alt text](https://github.com/MariaSkr/CarND-Traffic-Sign-Classifier-Project/blob/master/8.jpg)
 
-The first image might be difficult to classify because ...
+The images might be difficult to classify because of noizy background.
 
 ####2. Discuss the model's predictions on these new traffic signs and compare the results to predicting on the test set. At a minimum, discuss what the predictions were, the accuracy on these new predictions, and compare the accuracy to the accuracy on the test set (OPTIONAL: Discuss the results in more detail as described in the "Stand Out Suggestions" part of the rubric).
 
-Here are the results of the prediction:
+Here is example of a traffic sign after preprocessing:
+
+![alt text](https://github.com/MariaSkr/CarND-Traffic-Sign-Classifier-Project/blob/master/04-web-dataset-preprocessing.png)
+
 
 | Image			        |     Prediction	        					| 
 |:---------------------:|:---------------------------------------------:| 
-| Stop Sign      		| Stop sign   									| 
-| U-turn     			| U-turn 										|
-| Yield					| Yield											|
-| 100 km/h	      		| Bumpy Road					 				|
-| Slippery Road			| Slippery Road      							|
+| General caution     		| General caution  									| 
+| No passing   			| No passing										|
+|Speed limit (20km/h)					| Speed limit (20km/h)										|
+| Stop     		|Stop				 				|
+| Priority road			| Priority road  							|
+| Yield		| Yield							|
+| Turn right ahead	|Turn right ahead				|
 
-
-The model was able to correctly guess 4 of the 5 traffic signs, which gives an accuracy of 80%. This compares favorably to the accuracy on the test set of ...
+The model was able to correctly guess 7 of the 8 traffic signs, which gives an accuracy of 87.5%. This compares favorably to the accuracy on the test set of 92.6%.
 
 ####3. Describe how certain the model is when predicting on each of the five new images by looking at the softmax probabilities for each prediction. Provide the top 5 softmax probabilities for each image along with the sign type of each probability. (OPTIONAL: as described in the "Stand Out Suggestions" part of the rubric, visualizations can also be provided such as bar charts)
 
 The code for making predictions on my final model is located in the 11th cell of the Ipython notebook.
 
-For the first image, the model is relatively sure that this is a stop sign (probability of 0.6), and the image does contain a stop sign. The top five soft max probabilities were
+For the first image, the model is relatively sure that this is a road work sign (probability of 0.72998), but the image does contain a General caution sign. The top five soft max probabilities were:
 
 | Probability         	|     Prediction	        					| 
 |:---------------------:|:---------------------------------------------:| 
-| .60         			| Stop sign   									| 
-| .20     				| U-turn 										|
-| .05					| Yield											|
-| .04	      			| Bumpy Road					 				|
-| .01				    | Slippery Road      							|
+| .72998         			| Road work   									| 
+| .14959     				| Road narrows on the right										|
+| .06162 					| General caution sign											|
+| .04716      			| Pedestrians					 				|
+| .00731			    | Dangerous curve to the right     							|
 
 
-For the second image ... 
+For the second image,the model is relatively sure that this is a no passing sign (probability of 0.97063 ), and the image does contain a No passing sign. The top five soft max probabilities were:
 
+
+| Probability         	|     Prediction	        					| 
+|:---------------------:|:---------------------------------------------:| 
+| .97063        			| No passing   									| 
+| .02936     				| No passing for vehicles over 3.5 metric tone										|
+| 0					| Vehicles over 3.5 metric tons prohibited										|
+| 0     			| No vehicles			 				|
+| 0		    | Priority road    							|
+
+For the second image,the model is relatively sure that this is a no passing sign (probability of 0.97063 ), and the image does contain a No passing sign. The top five soft max probabilities were:
+
+
+| Probability         	|     Prediction	        					| 
+|:---------------------:|:---------------------------------------------:| 
+| .97063        			| No passing   									| 
+| .02936     				| No passing for vehicles over 3.5 metric tone										|
+| 0					| Vehicles over 3.5 metric tons prohibited										|
+| 0     			| No vehicles			 				|
+| 0		    | Priority road    
 ### (Optional) Visualizing the Neural Network (See Step 4 of the Ipython notebook for more details)
 ####1. Discuss the visual output of your trained network's feature maps. What characteristics did the neural network use to make classifications?
 
