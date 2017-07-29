@@ -130,6 +130,7 @@ The images might be difficult to classify because of noizy background.
 
 Here is example of a traffic sign after preprocessing:
 
+
 ![alt text](https://github.com/MariaSkr/CarND-Traffic-Sign-Classifier-Project/blob/master/04-web-dataset-preprocessing.png)
 
 
@@ -171,7 +172,7 @@ For the second image,the model is relatively sure that this is a no passing sign
 | 0     			| No vehicles			 				|
 | 0		    | Priority road    							|
 
-For the second image,the model is relatively sure that this is a no passing sign (probability of 0.97063 ), and the image does contain a No passing sign. The top five soft max probabilities were:
+For the third image,the model is relatively sure that this is a no passing sign (probability of 0.97063 ), and the image does contain a No passing sign. The top five soft max probabilities were:
 
 
 | Probability         	|     Prediction	        					| 
@@ -180,7 +181,18 @@ For the second image,the model is relatively sure that this is a no passing sign
 | .02936     				| No passing for vehicles over 3.5 metric tone										|
 | 0					| Vehicles over 3.5 metric tons prohibited										|
 | 0     			| No vehicles			 				|
-| 0		    | Priority road    
+| 0		    | Priority road    |
+
+For the fourth image,the model is relatively sure that this is a priority road (probability of 1.0 ), and the image does contain a Priority road sign. The top five soft max probabilities were:
+
+
+| Probability         	|     Prediction	        					| 
+|:---------------------:|:---------------------------------------------:| 
+| 1.0        			| Priority road   									| 
+| 0     				| Road work								|
+| 0					| Yield										|
+| 0     			| No vehicles			 				|
+| 0		    | Speed limit (30km/h)    |
 ### (Optional) Visualizing the Neural Network (See Step 4 of the Ipython notebook for more details)
 ####1. Discuss the visual output of your trained network's feature maps. What characteristics did the neural network use to make classifications?
 
