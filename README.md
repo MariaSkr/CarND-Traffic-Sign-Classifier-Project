@@ -98,7 +98,6 @@ training set accuracy of 0.99303
 validation set accuracy of 0.94580
 
 test set accuracy of 0.929
-
 This solution based on modified LeNet-5 architecture. With the original LeNet-5 architecture, I've got a validation set accuracy of about 0.88.
 
 Architecture adjustments:
@@ -112,7 +111,6 @@ Step 3: Important design choice - apply Dropout - a simple way to prevent neural
 ###Test a Model on New Images
 
 ####1. Choose five German traffic signs found on the web and provide them in the report. For each image, discuss what quality or qualities might be difficult to classify.
-
 Here are 8 German traffic signs that I found on the web:
 
 ![alt text](https://github.com/MariaSkr/CarND-Traffic-Sign-Classifier-Project/blob/master/1.jpg)
@@ -183,7 +181,6 @@ For the third image,the model is relatively sure that this is a no passing sign 
 | .02936     				| No passing for vehicles over 3.5 metric tone										|
 | 0					| Vehicles over 3.5 metric tons prohibited										|
 | 0     			| No vehicles			 				|
-
 | 0		    | Priority road    |
 
 For the fourth image,the model is relatively sure that this is a priority road (probability of 1.0 ), and the image does contain a Priority road sign. The top five soft max probabilities were:
@@ -244,4 +241,15 @@ For the eighth image,the model is relatively sure that this is a turn right ahea
 ### (Optional) Visualizing the Neural Network (See Step 4 of the Ipython notebook for more details)
 ####1. Discuss the visual output of your trained network's feature maps. What characteristics did the neural network use to make classifications?
 
+Feature maps of layer 1 convolution:
+
+![alt text](https://github.com/MariaSkr/CarND-Traffic-Sign-Classifier-Project/blob/master/05-conv1.png)
+
+ReLU-activation:
+
+![alt text](https://github.com/MariaSkr/CarND-Traffic-Sign-Classifier-Project/blob/master/06-conv1_relu.png)
+
+Max-pooling:
+
+![alt text](https://github.com/MariaSkr/CarND-Traffic-Sign-Classifier-Project/blob/master/07-conv1_pool.png'.png)
 
