@@ -105,7 +105,6 @@ Architecture adjustments:
 Step 1: perform preprocessing (grayscale and normalization). Results for training and validation sets on epoch #10 were 0.99253 and 0.89435 that's mean overfitting.
 
 Step 2: generate augmented training data. Results for training and validation sets on epoch #10 were 0.98437 and 0.91633 that's mean overfitting again.
-
 Step 3: Important design choice - apply Dropout - a simple way to prevent neural networks from overfitting). Results for training and validation sets on epoch #10 were around 0.99237 and 0.93673 (keep_prob values were in range 0.5-0.8).
 
 ###Test a Model on New Images
@@ -139,7 +138,6 @@ Here is example of a traffic sign after preprocessing:
 | No passing   			| No passing										|
 |Speed limit (20km/h)					| Speed limit (20km/h)										|
 | Stop     		|Stop				 				|
-
 | Priority road			| Priority road  							|
 | Yield		| Yield							|
 | Turn right ahead	|Turn right ahead				|
