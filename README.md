@@ -166,22 +166,22 @@ For the second image,the model is relatively sure that this is a no passing sign
 
 | Probability         	|     Prediction	        					| 
 |:---------------------:|:---------------------------------------------:| 
-| .97063        			| No passing   									| 
-| .02936     				| No passing for vehicles over 3.5 metric tone										|
+| 1        			| No passing   									| 
+| 0     				| No passing for vehicles over 3.5 metric tone										|
 | 0					| Vehicles over 3.5 metric tons prohibited										|
 | 0     			| No vehicles			 				|
 | 0		    | Priority road    							|
 
-For the third image,the model is relatively sure that this is a no passing sign (probability of 0.97063 ), and the image does contain a No passing sign. The top five soft max probabilities were:
+For the third image,the model is relatively sure that this is a General caution (probability of 0.97063 ), and the image does contain a General caution sign. The top five soft max probabilities were:
 
 
 | Probability         	|     Prediction	        					| 
 |:---------------------:|:---------------------------------------------:| 
-| .97063        			| No passing   									| 
-| .02936     				| No passing for vehicles over 3.5 metric tone										|
-| 0					| Vehicles over 3.5 metric tons prohibited										|
-| 0     			| No vehicles			 				|
-| 0		    | Priority road    |
+| .97063        			| General caution   									| 
+| .02936     				| Pedestrians						|
+| 0					| Right-of-way at the next intersection							|
+| 0     			| Road work	 				|
+| 0		    | Road narrows on the right    |
 
 For the fourth image,the model is relatively sure that this is a priority road (probability of 1.0 ), and the image does contain a Priority road sign. The top five soft max probabilities were:
 
